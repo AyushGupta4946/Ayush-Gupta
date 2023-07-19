@@ -155,5 +155,10 @@
         height: 130px;
     }
 
-    
+    .project-heading{
+        text-align: center;
+    }
+    .project-details{
+        grid-template-columns: 1fr;
+    }
 }

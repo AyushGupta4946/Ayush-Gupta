@@ -61,4 +61,8 @@
     .skill-item {
         height: 130px;
     }
+
+    .project-details{
+        grid-template-columns: 1fr;
+    }
 }
