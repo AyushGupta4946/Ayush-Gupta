@@ -1,0 +1,159 @@
+/* @media only screen and ((max-width:620px) and (min-width:551px)) {
+    .header{
+        width: 100%;
+    }
+    
+    .list{
+        position: absolute;
+        top: -200px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+
+    .list li a{
+        display: block;
+        margin: 10px;
+    }
+    
+    .open {
+        top: 100%;
+    }
+    .openmenu{
+        display: block;
+    }
+
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px;
+    }
+    
+    .about{
+        height: 100vh;
+    }
+    .about-main{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .about-detail{
+        border:1px solid green;
+        height: 400px;
+        padding: 25px 0;
+    }
+    .about-detail p{
+        line-height: 25px;
+    }
+    .about-img{
+        width: 100%;
+        height: 400px;
+        margin: 10px auto;
+    }
+
+    .skills{
+        border: 1px solid green;
+        margin: 50px;
+    }
+    .skill-detail{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+} */
+
+@media only screen and ((max-width:550px ) and (min-width:410px)){
+    .header{
+        width: 100%;
+    }
+    
+    .list{
+        position: absolute;
+        top: -200px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+
+    .list li a{
+        display: block;
+        margin: 10px;
+    }
+    
+    .open {
+        top: 100%;
+    }
+    .openmenu{
+        display: block;
+    }
+
+    
+    .name{
+        padding: 15px 0px;
+    }
+    .name .prof{
+        font-size: 2.2rem;
+    }
+    .info .desc{
+        line-height: 30px;
+        font-size: 1.4rem;
+    }
+
+
+    .info{
+        margin-bottom: 50px;
+        height: 500px;
+        padding: 25px 20px;
+    }
+    
+    .about{
+
+        height: 1150px;
+    }
+    .main-heading{
+        text-align: center;
+    }
+    .about-main{
+        grid-template-columns: 1fr;
+        gap: 25px;
+        
+    }
+    .about-detail{
+        height: 500px;
+        padding: 25px 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .about-detail p , .about-detail a{
+        line-height: 25px;
+        font-size: 1.4rem;
+    }
+    .about-img{
+        width: 95%;
+        height: auto;
+        margin: 15px 14px;
+    }
+    .skills{
+        height: 1350px;
+    }
+    .skill-title{
+        text-align: center;
+    }
+    .skill-detail{
+        grid-template-columns: 1fr;
+    }
+    .skill-item{
+        height: 130px;
+    }
+
+    
+}
