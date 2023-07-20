@@ -161,4 +161,14 @@
     .project-details{
         grid-template-columns: 1fr;
     }
+    .contact{
+        width: 100%;
+    }
+    .contact-section{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .contact-left{
+        padding: 10px 5px;
+    }
 }
