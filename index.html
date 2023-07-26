@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive1.css" />
     <link rel="stylesheet" href="responsive2.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("3CxzL2E-Xy_28O3Xl");
+      })();
+    </script>
   </head>
   <body>
     <header class="header">
@@ -206,12 +215,13 @@
             </div>
           </div>
           <div class="contact-right">
-            <form name="submit-to-google-sheet">
+            <form onsubmit="sendEmail(); reset(); return false">
               <label for="Name">NAME :</label>
               <input
                 type="text"
                 name="Name"
                 placeholder="Enter Your Name"
+                id="name"
                 required
               />
               <label for="phone">PHONE :</label>
@@ -219,12 +229,14 @@
                 type="number"
                 name="phone"
                 placeholder="Enter Your Contact Number"
+                id="phone"
               />
               <label for="Email">EMAIL :</label>
               <input
                 type="email"
                 name="Email"
                 placeholder="Your Email"
+                id="email"
                 required
               />
               <label for="Message">MESSAGE :</label>
@@ -232,9 +244,12 @@
                 name="Message"
                 rows="10"
                 placeholder="Your Message"
+                id="message"
               ></textarea>
               <div class="submit-button-container">
-                <button type="submit" class="submit-btn">Submit</button>
+                <button type="submit" class="submit-btn" onclick="sendEmail()">
+                  Submit
+                </button>
               </div>
               <!-- <a href="#" class="btn btn2">Submit</a> -->
             </form>
@@ -242,6 +257,8 @@
         </div>
       </div>
     </div>
+    <!-- smtpjs script  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- fontawesome script  -->
     <script
       src="https://kit.fontawesome.com/7cc1870cb6.js"
